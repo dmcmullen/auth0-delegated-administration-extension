@@ -1,8 +1,8 @@
 {
   "title": "Dans Delegated Administration Dashboard",
   "name": "auth0-dan-delegated-admin",
-  "version": "3.0.0",
-  "author": "auth0",
+  "version": "1.0.0",
+  "author": "dmcmullen",
   "useHashName": false,
   "description": "This extension allows non-dashboard administrators to manage (a subset of) users.",
   "type": "application",
