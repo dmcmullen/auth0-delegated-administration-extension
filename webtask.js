@@ -10,6 +10,7 @@ const createServer = tools.createServer((cfg, storage) => {
 });
 
 module.exports = (context, req, res) => {
+  logger.info('Starting to Start Delegated Admin Extension');
   config.setValue('PUBLIC_WT_URL', tools.urlHelpers.getWebtaskUrl(req));
   createServer(context, req, res);
 };
