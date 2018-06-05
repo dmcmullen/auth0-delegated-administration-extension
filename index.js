@@ -39,3 +39,4 @@ app.listen(port, (error) => {
     logger.info(`Express listening on http://localhost:${port}`);
   }
 });
+module.exports = app;
