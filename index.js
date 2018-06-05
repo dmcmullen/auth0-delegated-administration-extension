@@ -1,6 +1,8 @@
 const path = require('path');
 const nconf = require('nconf');
 
+const logger = require('./server/lib/logger');
+
 // Initialize babel.
 require('babel-core/register')({
   ignore: /node_modules/,
@@ -10,7 +12,6 @@ require('babel-polyfill');
 
 // Handle uncaught.
 process.on('uncaughtException', (err) => {
-  const logger = require('./server/lib/logger');
   logger.error(err);
 });
 
@@ -32,7 +33,6 @@ const app = require('./server')((key) => nconf.get(key), null);
 
 const port = nconf.get('PORT');
 app.listen(port, (error) => {
-  const logger = require('./server/lib/logger');
   if (error) {
     logger.error(error);
   } else {
