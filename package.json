@@ -1,6 +1,6 @@
 {
   "name": "auth0-dan-delegated-admin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dans Delegated Administration Dashboard",
   "engines": {
     "node": "8.9"
