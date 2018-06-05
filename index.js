@@ -1,6 +1,6 @@
 var path = require('path');
 var nconf = require('nconf');
-STUPOID
+
 var logger = require('./server/lib/logger');
 
 // Initialize babel.
